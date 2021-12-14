@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Emi Green</p>
+        </div>
+        <ul>
+            <li id="idall" onclick="setFilter('all')" class="active_filter">All</li>
+            <li id="idbic" onclick="setFilter('bic')" >BIC</li>
+            <li id="idkahla" onclick="setFilter('kahla')" >Kahla</li>
+        </ul>
+    </header>
+
+
+    <div id="showDetailID" class="showImage">
+        <p onclick="closeShowDetail()" class="closeIcon">X</p>
+        <img id="currentImageID" src="./assets/img/photo.jpg" alt="" />
+        <div class="nextprevious">
+            <p onclick="previousPic()" class="pr">Previous</p>
+            <p onclick="nextPic()" class="next">Next</p>
+        </div>
+    </div>
+
+    <div id="containerID" class="container"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
